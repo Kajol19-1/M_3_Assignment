@@ -13,8 +13,24 @@ function calculateAverageGrades($studentGrades) {
         $total = array_sum($grades);
         $count = count($grades);
         $average = $total / $count;
+
+        if ($average >= 90) {
+            $grade = 'A';
+        } elseif ($average >= 80) {
+            $grade = 'B';
+        } elseif ($average >= 70) {
+            $grade = 'C';
+        } elseif ($average >= 60) {
+            $grade = 'D';
+        } else {
+            $grade = 'F';
+        }
+
+        echo "Student {$student}'s Average Grade: $average";
+        echo " And The corresponding grade is: {$grade} \n";
+
         
-        echo "Student {$student}'s Average Grade: $average\n";
+        
     }
 }
 

@@ -7,7 +7,7 @@ function modifiedText($text) {
 
     $text = str_replace("brown", "red", $text);
 
-    echo $text;
+    echo "Modified Text is: {$text}";
 }
 modifiedText($text);
 ?>

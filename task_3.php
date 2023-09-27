@@ -7,5 +7,6 @@ arsort($grades);
 print_r($grades);
 
 foreach($grades as $grade){
+    
     echo $grade."\n";
 }
